@@ -13,9 +13,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    /*
+     * アプリの起動準備が終わった際に呼び出されるメソッド
+     *
+     * application：UIApplicationオブジェクト
+     * launchOptions：オプション
+     */
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // StoryBoardから初回表示画面となるビューコントローラーを取得
+        let stroyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = stroyboard.instantiateInitialViewController()
+
+        let subStroyboard = UIStoryboard(name: "Sub2", bundle: nil)
+        let subController = subStroyboard.instantiateInitialViewController()
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        // ルートビューコントローラーを指定
+//        window?.rootViewController = controller
+        window?.rootViewController = subController
+        // ウィンドウを表示
+        window?.makeKeyAndVisible()
         return true
     }
 
