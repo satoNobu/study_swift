@@ -28,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let subStroyboard = UIStoryboard(name: "Sub2", bundle: nil)
         let subController = subStroyboard.instantiateInitialViewController()
         
+        // ウィンドウを初期化、サイズを指定
         window = UIWindow(frame: UIScreen.main.bounds)
         // ルートビューコントローラーを指定
 //        window?.rootViewController = controller
