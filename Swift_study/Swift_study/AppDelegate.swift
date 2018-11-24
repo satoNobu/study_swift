@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         // ルートビューコントローラーを指定
 //        window?.rootViewController = controller
-        window?.rootViewController = subController
+        window?.rootViewController = controller
         // ウィンドウを表示
         window?.makeKeyAndVisible()
         return true

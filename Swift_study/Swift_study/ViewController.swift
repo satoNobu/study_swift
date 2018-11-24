@@ -10,11 +10,36 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // 初回ロード時の処理
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print("初回ロード時の処理")
+    }
+    // 画面が表示される前の処理
+    override func viewWillAppear(_ animated: Bool) {
+        print("画面が表示される前の処理")
+    }
+    // 画面が表示された後の処理
+    override func viewDidAppear(_ animated: Bool) {
+        print("画面が表示された後の処理")
     }
 
+    // 画面が閉じる前の処理
+    override func viewWillDisappear(_ animated: Bool) {
+        print("画面が閉じる前の処理")
+    }
+    // 画面が閉じた後の処理
+    override func viewDidDisappear(_ animated: Bool) {
+        print("画面が閉じた後の処理")
+    }
+    // メモリ不足の処理
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        print("メモリ不足時の処理")
+    }
+    
+    
 
 }
 
