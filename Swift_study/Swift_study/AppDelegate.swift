@@ -25,14 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let stroyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = stroyboard.instantiateInitialViewController()
 
-        let subStroyboard = UIStoryboard(name: "Sub2", bundle: nil)
-        let subController = subStroyboard.instantiateInitialViewController()
-        
         // ウィンドウを初期化、サイズを指定
         window = UIWindow(frame: UIScreen.main.bounds)
-        // ルートビューコントローラーを指定
-//        window?.rootViewController = controller
-        window?.rootViewController = controller
+        // ビューコントローラーを指定してUINavigationControllerオブジェクトを生成
+        let navVc = UINavigationController(rootViewController: controller!)
+        window?.rootViewController = navVc
         // ウィンドウを表示
         window?.makeKeyAndVisible()
         return true

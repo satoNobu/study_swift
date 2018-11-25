@@ -14,6 +14,7 @@
 		420CA9DE2196E66900E8E9C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 420CA9DC2196E66900E8E9C3 /* LaunchScreen.storyboard */; };
 		420CA9E62196E9D200E8E9C3 /* Sub2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 420CA9E52196E9D200E8E9C3 /* Sub2.storyboard */; };
 		420CA9E82196EA9D00E8E9C3 /* Sub2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420CA9E72196EA9D00E8E9C3 /* Sub2ViewController.swift */; };
+		423BA7C521A98ABE000B1561 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423BA7C421A98ABE000B1561 /* ModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		420CA9DF2196E66900E8E9C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		420CA9E52196E9D200E8E9C3 /* Sub2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sub2.storyboard; sourceTree = "<group>"; };
 		420CA9E72196EA9D00E8E9C3 /* Sub2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sub2ViewController.swift; sourceTree = "<group>"; };
+		423BA7C421A98ABE000B1561 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				420CA9DF2196E66900E8E9C3 /* Info.plist */,
 				420CA9E52196E9D200E8E9C3 /* Sub2.storyboard */,
 				420CA9E72196EA9D00E8E9C3 /* Sub2ViewController.swift */,
+				423BA7C421A98ABE000B1561 /* ModalViewController.swift */,
 			);
 			path = Swift_study;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				423BA7C521A98ABE000B1561 /* ModalViewController.swift in Sources */,
 				420CA9E82196EA9D00E8E9C3 /* Sub2ViewController.swift in Sources */,
 				420CA9D62196E66600E8E9C3 /* ViewController.swift in Sources */,
 				420CA9D42196E66600E8E9C3 /* AppDelegate.swift in Sources */,

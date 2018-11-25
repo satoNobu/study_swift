@@ -12,8 +12,9 @@ class Sub2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // ナビゲーションバーを非表示にしたい場合（sub2画面だけで）
+//        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        // ナビゲーションバーの戻るボタンを消したい場合
+//        self.navigationItem.setHidesBackButton(true, animated: false)
     }
-    
-    
 }
